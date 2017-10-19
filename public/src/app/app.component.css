@@ -1,0 +1,29 @@
+#container{
+    height: 700px;
+    width: 100%;
+}
+h1{
+    height: 10%;
+    text-align: center;
+}
+#top{
+    height: 30%;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+
+#list{
+    margin-top: 20px;
+    outline: 2px solid black;
+    padding: 20px;
+    overflow: scroll;
+    height: 50%;
+}
+#add{
+    padding: 20px;
+    outline: 2px solid black;
+    padding: none;
+    height: 5%;
+}

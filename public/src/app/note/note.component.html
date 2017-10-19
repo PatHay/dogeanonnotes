@@ -1,0 +1,13 @@
+<form #myForm='ngForm' (submit)="onSubmit()">
+  <label for="note">Note: </label>
+  <input 
+  type="text" 
+  name="note" 
+  [(ngModel)]="note.text" 
+  required 
+  minlength="3" 
+  #text="ngModel">
+  <button type="submit" value="submit" [hidden]="!text.valid">Add Note</button><br>
+  <div *ngIf="!text.valid && !text.pristine">Note not valid!  Cannot be blank and must be at least 3 characters long!</div>
+
+</form>
